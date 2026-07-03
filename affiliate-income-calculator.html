@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Affiliate Income Projection Calculator | XJR Tools</title>
+  <meta name="description" content="Estimate potential affiliate income based on visitors, conversion rate, commission amount and sales volume." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo-mark">X🌍</div>
+        <div>
+          <div class="brand-name">XJR Tools</div>
+          <div class="brand-line">Free Tools. Smarter Decisions. Better Futures.</div>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="all-calculators.html">All Calculators</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-layout">
+    <article>
+      <p class="breadcrumb"><a href="index.html">Home</a> → Business Tools</p>
+      <h1>Affiliate Income Projection Calculator</h1>
+      <p class="intro">Estimate how much affiliate income you could generate from visitors, conversion rates, and commission levels.</p>
+
+      <section class="calculator-box">
+        <h2>Calculator</h2>
+
+        <label>Monthly visitors</label>
+        <input type="number" id="visitors" value="1000" />
+
+        <label>Conversion rate (%)</label>
+        <input type="number" id="conversionRate" value="2" step="0.1" />
+
+        <label>Commission per sale ($)</label>
+        <input type="number" id="commission" value="40" />
+
+        <label>Refund rate (%)</label>
+        <input type="number" id="refundRate" value="5" step="0.1" />
+
+        <button onclick="calculateAffiliate()">Calculate</button>
+
+        <div class="result-box">
+          <p>Estimated sales: <strong id="sales">20</strong></p>
+          <p>Gross commission: <strong id="gross">$800</strong></p>
+          <p>Estimated net income: <strong id="net">$760</strong></p>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>What is affiliate income?</h2>
+        <p>Affiliate income is money earned when you recommend a product or service and receive a commission after someone buys through your link.</p>
+
+        <h2>Formula used</h2>
+        <p><strong>Sales = Monthly Visitors × Conversion Rate</strong></p>
+        <p><strong>Net Income = Sales × Commission Per Sale − Refunds</strong></p>
+
+        <h2>Example</h2>
+        <p>If 1,000 people visit your page, 2% buy, and you earn $40 per sale, your gross commission is $800 before refunds.</p>
+      </section>
+
+      <section class="related-tools">
+        <h2>Related calculators</h2>
+        <ul>
+          <li><a href="return-on-advertising-spend-calculator.html">Return on Advertising Spend (ROAS) Calculator</a></li>
+          <li><a href="product-pricing-calculator.html">Product Pricing Calculator</a></li>
+          <li><a href="email-marketing-return-on-investment-calculator.html">Email Marketing Return on Investment (ROI) Calculator</a></li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>XJR Tools</strong><p>Free tools to help you make better decisions.</p></div>
+      <div><strong>Legal</strong><a href="privacy-policy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a></div>
+      <div><strong>Pages</strong><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    </div>
+  </footer>
+
+  <script src="js/calculators.js"></script>
+</body>
+</html>
